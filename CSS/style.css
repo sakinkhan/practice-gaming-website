@@ -1,3 +1,8 @@
+nav {
+    display: inline-block;
+    background-color: #0981f1;
+    padding: 10px;
+}
 body {
     background-image: url('../images/banner-bg.jpg');
     background-size: cover;
