@@ -10,6 +10,35 @@
             text-align: justify;
             color: whitesmoke;
         }
+        .featured {
+            text-align: center;
+        }
+        #sale{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        #sale:hover{
+            color: #e8646c;
+            transform: scale(1.5);
+            transition: all 0.3s ease-in-out;
+        }
+        #show-more-btn {
+            font-size: larger;
+            font-weight: bold;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #527dfd9f;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        #show-more-btn:hover {
+            background-color: #e8646c;
+            transform: scale(1.15);
+            transition: all 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body>
@@ -27,28 +56,100 @@
                 </ul>
         </div>
     </header>
-    <main class="products">
-        <div>
-            <img src="images/Apex-S25.jpg" alt="apex legends" class="product-image">
+    <main class="all-products">
+        <div class="featured">
+            <h1 id="sale">ON SALE!</h2>
+            <p><span style="margin-top: 2px; margin-bottom: 20px; font-size: 20px; font-weight: bold; color: #6c8cee;">Check out our latest releases and exclusive offers!</span></p>
         </div>
-        <div class="product-text">
-            <p> <span style="font-size: 30px; font-weight: bold;">APEX LEGENDS™</span>
-                <br> 
-                TARGET GREATNESS IN APEX LEGENDS™: PRODIGY
-                <br> <br>
-                <span style="text-decoration: line-through; margin-right: 10px; color: rgba(245, 245, 245, 0.849);">$28</span>
-                <span style="font-size: 30px; font-weight: bold; color: #6c8cee;">$22</span>
-                <br> <br>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat, provident quaerat et at illum consequatur laudantium, voluptatem dolore aliquid accusamus expedita aperiam excepturi aliquam enim adipisci totam quasi? Dolorum, necessitatibus. Odit id repellat modi corporis aliquam, temporibus sunt quod aperiam quaerat minima doloremque culpa tempora soluta inventore, sequi autem, nam mollitia! Exercitationem quos quam sed ratione nostrum atque reiciendis suscipit? Ex rem ipsum nihil illo accusamus commodi assumenda itaque corrupti tenetur aspernatur id placeat, vel, saepe neque laborum? Soluta perferendis harum quas a. Optio ab velit dicta asperiores, odio error quos distinctio accusantium consequuntur.</span>
-            </p>
-            <div class="buttons">
-                <input type="number" name="" id="product-counter" value="0" min="0"> 
-                <button id="cart">ADD TO CART</button>
+        <div class="product1">
+            <div class="img-container">
+                <img src="images/Apex-S25.jpg" alt="apex legends" id="apex-image">
+            </div>
+            <div class="product-text">
+                <p> <span style="font-size: 30px; font-weight: bold;">APEX LEGENDS™</span>
+                    <br> 
+                    TARGET GREATNESS IN APEX LEGENDS™: PRODIGY
+                    <br> <br>
+                    <span style="text-decoration: line-through; margin-right: 10px; color: rgba(245, 245, 245, 0.849);">$28</span>
+                    <span style="font-size: 30px; font-weight: bold; color: #6c8cee;">$22</span>
+                    <br> <br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat, provident quaerat et at illum consequatur laudantium, voluptatem dolore aliquid accusamus expedita aperiam excepturi aliquam enim adipisci totam quasi? Dolorum, necessitatibus. Odit id repellat modi corporis aliquam, temporibus sunt quod aperiam quaerat minima doloremque culpa tempora soluta inventore, sequi autem, nam mollitia! Exercitationem quos quam sed ratione nostrum atque reiciendis suscipit? Ex rem ipsum nihil illo accusamus commodi assumenda itaque corrupti tenetur aspernatur id placeat, vel, saepe neque laborum? Soluta perferendis harum quas a. Optio ab velit dicta asperiores, odio error quos distinctio accusantium consequuntur.</span>
+                </p>
+                <div class="buttons">
+                    <input type="number" name="" id="product-counter" value="0" min="0"> 
+                    <button id="cart">ADD TO CART</button>
+                </div>
             </div>
         </div>
+        <div class="product2">
+            <div class="img-container">
+                <img src="images/top-game-02.jpg" alt="ryse image" id="ryse-image">
+            </div>
+            <div class="product-text">
+                <p> <span style="font-size: 30px; font-weight: bold;">RYSE™</span>
+                    <br> 
+                    SON OF ROME
+                    <br> <br>
+                    <span style="text-decoration: line-through; margin-right: 10px; color: rgba(245, 245, 245, 0.849);">$30</span>
+                    <span style="font-size: 30px; font-weight: bold; color: #6c8cee;">$25</span>
+                    <br> <br>
+                    <span>Error repellat, provident quaerat et at illum consequatur laudantium, voluptatem dolore aliquid accusamus expedita aperiam excepturi aliquam enim adipisci totam quasi? Dolorum, necessitatibus. Odit id repellat modi corporis aliquam, temporibus sunt quod aperiam quaerat minima doloremque culpa tempora soluta inventore, sequi autem, nam mollitia! Exercitationem quos quam sed ratione nostrum atque reiciendis suscipit? Ex rem ipsum nihil illo accusamus commodi assumenda itaque corrupti tenetur aspernatur id placeat, vel, saepe neque laborum? Soluta perferendis harum quas a. Optio ab velit dicta asperiores, odio error quos distinctio accusantium consequuntur.</span>
+                </p>
+                <div class="buttons">
+                    <input type="number" name="" id="product-counter" value="0" min="0"> 
+                    <button id="cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="product3">
+            <div class="img-container">
+                <img src="images/top-game-03.jpg" alt="mario" id="mario-image">
+            </div>
+            <div class="product-text">
+                <p> <span style="font-size: 30px; font-weight: bold;">SUPER MARIO™</span>
+                    <br> 
+                    PARTY SUPERSTARS: NINTENDO SWITCH
+                    <br> <br>
+                    <span style="text-decoration: line-through; margin-right: 10px; color: rgba(245, 245, 245, 0.849);">$18</span>
+                    <span style="font-size: 30px; font-weight: bold; color: #6c8cee;">$10</span>
+                    <br> <br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat, provident quaerat et at illum consequatur laudantium, voluptatem dolore aliquid accusamus expedita aperiam excepturi aliquam enim adipisci totam quasi? Dolorum, necessitatibus. Odit id repellat modi corporis aliquam, temporibus sunt quod aperiam quaerat minima doloremque culpa tempora soluta inventore, sequi autem, nam mollitia! Exercitationem quos quam sed ratione nostrum atque reiciendis suscipit? Ex rem ipsum nihil illo accusamus commodi assumenda itaque corrupti tenetur aspernatur id placeat, vel, saepe neque laborum? Soluta perferendis harum quas a. Optio ab velit dicta asperiores, odio error quos distinctio accusantium consequuntur.</span>
+                </p>
+                <div class="buttons">
+                    <input type="number" name="" id="product-counter" value="0" min="0"> 
+                    <button id="cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="product4">
+            <div class="img-container">
+                <img src="images/top-game-04.jpg" alt="mario" id="figher-image">
+            </div>
+            <div class="product-text">
+                <p> <span style="font-size: 30px; font-weight: bold;">STREET FIGHTER™</span>
+                    <br> 
+                    THERE'S ALWAYS SOMEONE STRONGER
+                    <br> <br>
+                    <span style="text-decoration: line-through; margin-right: 10px; color: rgba(245, 245, 245, 0.849);">$15</span>
+                    <span style="font-size: 30px; font-weight: bold; color: #6c8cee;">$8</span>
+                    <br> <br>
+                    <span>Street Fighter can be summed up in one phrase, "There's Always Someone Stronger." The series and its history is built upon the glorious victories and stunning defeats of its characters and players. <br>
+                    As Street Fighter continues to evolve, we're always setting the stage for our players and their exciting battles.</span>
+                </p>
+                <div class="buttons">
+                    <input type="number" name="" id="product-counter" value="0" min="0"> 
+                    <button id="cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <button id="show-more-btn">Show More</button>
+        </div>
+        
     </main>
     <footer>
         <p>Copyright © 2030 Moodman Gaming Company. All rights reserved.</p>
     </footer>
 </body>
 </html>
+

@@ -1,5 +1,5 @@
 * {
-    color: whitesmoke
+    color: whitesmoke;
 }
 .logo {
     margin-left: 180px;
@@ -27,6 +27,11 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0px;
+}
+body {
+    max-width: 100%;
 }
 .banner {
     display: flex;
@@ -36,16 +41,21 @@ nav a:hover {
 .banner-text {
     color: rgba(245, 245, 245, 0.671);
     font-size: 24px;
-    margin: 2px;
+    /* margin: 2px; */
     margin-left: 200px;
 }
 .banner-image {
-    width: 400px;
-    border:#0b0c17 10px solid;
+    width: 22%;
     display: flex;
     border-radius: 0px 45px 0px 45px;
     margin-right: 200px;
+    box-shadow: 5px 4px 8px 4px rgba(233, 231, 231, 0.322);
 }
+.banner-image:hover {
+    transform: scale(1.09);
+    transition: transform 0.5s ease;
+}
+
 li {
     display: inline-block;
     list-style-type: none;
@@ -68,18 +78,33 @@ h1 {
     margin: 0 auto;
     max-width: 80%;
 }
-.products{
-    display: flex;
+.all-products {
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+.product1, .product2, .product3, .product4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 200px;
     margin-right: 200px;
 }
-.product-image {
-    width: 500px;
+#apex-image, #figher-image, #ryse-image, #mario-image {
+    display: block;
+    width: 35em;
     height: auto;
+    border: 1px solid #527dfd9f;
+    box-shadow: 5px 4px 8px 4px rgba(233, 231, 231, 0.322);
+    transition: transform 0.5s ease;
     border-radius: 0px 45px 0px 45px;
+}
+#apex-image:hover, #ryse-image:hover, #mario-image:hover, #figher-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
 }
 .buttons {
     display: flex;
@@ -92,7 +117,7 @@ h1 {
     color: whitesmoke; 
     background-color: #527dfd9f;
     text-align: center;
-    width: 80px;
+    width: 5em;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -117,11 +142,11 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
     width: 100%;
-    margin-top: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
+    margin-top: 50px;
     right: 0;
 }
