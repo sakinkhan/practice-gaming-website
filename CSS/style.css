@@ -1,16 +1,32 @@
+* {
+    color: whitesmoke
+}
+.logo {
+    margin-left: 180px;
+}
 nav {
-    margin-inline-end: 250px;
+    margin-inline-end: 150px;
     display: inline-flex;
     padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(233, 227, 227);
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+nav a:hover {
+    background-color: #527dfd9f;
+}
+.login:hover {
+    background-color: #e8646c;
 }
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
-.logo {
-    margin-left: 250px;
+    padding: 10px;
 }
 .banner {
     display: flex;
@@ -21,26 +37,22 @@ nav {
     color: rgba(245, 245, 245, 0.671);
     font-size: 24px;
     margin: 2px;
-    margin-left: 280px;
+    margin-left: 200px;
 }
 .banner-image {
-    width: 480px;
+    width: 400px;
     border:#0b0c17 10px solid;
     display: flex;
     border-radius: 0px 45px 0px 45px;
-    margin-right: 290px;
+    margin-right: 200px;
 }
 li {
     display: inline-block;
     list-style-type: none;
-    margin: 30px;
+    margin: 0 10px;
     padding: 0;
 }
-a {
-    text-decoration: none;
-    color: rgb(233, 227, 227);
-    font-size: 18px;
-}
+
 body {
     background-color: #0b0c17;
     background-size: cover;
@@ -49,9 +61,67 @@ body {
 h1 {
     color: white
 }
+.about {
+    border: 2px solid #527dfd9f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.product-image {
+    width: 500px;
+    height: auto;
+    border-radius: 0px 45px 0px 45px;
+}
+.buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+#product-counter {
+    color: whitesmoke; 
+    background-color: #527dfd9f;
+    text-align: center;
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+#cart {
+    color: whitesmoke; 
+    background-color: #e8646c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#cart:hover {
+    background-color: #527dfdf5;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 8px;
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
