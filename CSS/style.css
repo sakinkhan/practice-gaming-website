@@ -51,10 +51,10 @@ body {
     margin-right: 200px;
     box-shadow: 5px 4px 8px 4px rgba(233, 231, 231, 0.322);
 }
-.banner-image:hover {
+/* .banner-image:hover {
     transform: scale(1.09);
     transition: transform 0.5s ease;
-}
+} */
 
 li {
     display: inline-block;
