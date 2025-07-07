@@ -1,6 +1,10 @@
 * {
     color: whitesmoke;
 }
+body{
+    max-width: 1170px;
+    margin-top: 200px;
+}
 .logo {
     margin-left: 180px;
 }
@@ -23,12 +27,17 @@ nav a:hover {
     background-color: #e8646c;
 }
 .header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-radius: 0 0 20px 20px;
-    margin-top: 0px;
+    margin: 0 auto;
+    background-color: rgb(11, 12, 23);
 }
 body {
     max-width: 100%;
@@ -42,13 +51,13 @@ body {
     color: rgba(245, 245, 245, 0.671);
     font-size: 24px;
     /* margin: 2px; */
-    margin-left: 200px;
+    margin-left: 11%;
 }
 .banner-image {
     width: 22%;
     display: flex;
     border-radius: 0px 45px 0px 45px;
-    margin-right: 200px;
+    margin-right: 100px;
     box-shadow: 5px 4px 8px 4px rgba(233, 231, 231, 0.322);
 }
 /* .banner-image:hover {
@@ -137,16 +146,39 @@ h1 {
 #cart:hover {
     background-color: #527dfdf5;
 }
+#product-counter:hover {
+    background-color: #527dfd;
+}
+#product-counter:active {
+    background-color: #3565f8;
+}
 
 footer {
-    background-color: #333;
-    color: white;
+    margin-top: 150px;
+    background-color: #0071f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/footer-bg.jpg);
+    min-height: 150px;
+    border-radius: 150px 150px 0px 0px;
+    margin-bottom: -20px;
+  }
+  
+  footer p {
     text-align: center;
-    padding: 5px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin-top: 50px;
-    right: 0;
-}
+    line-height: 150px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  footer p a {
+    color: #fff;
+    transition: all .3s;
+    position: relative;
+    z-index: 3;
+  }
+  
+  footer p a:hover {
+    opacity: 0.75;
+  }

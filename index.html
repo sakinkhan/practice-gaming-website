@@ -6,6 +6,7 @@
     <title>Moodman Gaming Shop</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="images/moodman_round_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         .caption-underline{
             margin-left: 130px;
@@ -18,7 +19,7 @@
         #discount {
             position: relative;
             top: 230px;
-            right: 660px;
+            right: 550px;
             background-color: #e8646c;
             width: 115px;
             height: 100px;
@@ -50,7 +51,7 @@
             outline: none;
             font-size: 16px;
         }
-        #search-button {
+        #search-button, #view-all {
             background-color: #e8646c;
             color: white;
             border: none;
@@ -63,7 +64,69 @@
             font-size: 16px;
             font-weight: bold;
         }
-        #search-button:hover {
+        #search-button:hover, #view-all:hover {
+            background-color: #527dfd;
+            transition: background-color 0.3s ease;
+        }
+        .trending-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .trending-image {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        .trending1, .trending2, .trending3, .trending4 {
+            width: 300px;
+            background-color: #e2e2e2e1;
+            border-radius: 20px;
+        }
+        .trending1:hover, .trending2:hover, .trending3:hover, .trending4:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .text-btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .trending-price {
+            background-color: #527dfd;
+            color: white;
+            position: relative;
+            top: -220px;
+            left: 180px;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 15px;
+        }
+        .cart-button{
+            background-color: #e8646c;
+            color: white;
+            border: none;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        .cart-button:hover{
             background-color: #527dfd;
             transition: background-color 0.3s ease;
         }
@@ -71,7 +134,9 @@
 </head>
 <header>
     <div class="header-container">
-        <img src="images/Moodman Logo.jpeg" alt="Moodman Gaming Logo" class="logo" width="150px" height="150px">
+        <a href="index.html">
+            <img src="images/Moodman_Logo-fav icon.png" alt="Moodman Gaming Logo" class="logo" width="150px" height="150px">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -98,8 +163,65 @@
         </div>
         <img src="images/ea fc 25 cover.jpg" alt="EA FC 25 cover photo" class="banner-image">
         <span id="discount">-40%</span>
-        
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="trending">
+        <div class="trending-header">
+            <div class="trending-text">
+                <h4 style="color: #e8646c;">TRENDING</h4>
+                <h1>Trending Games</h1>
+            </div>
+            <button type="submit" id="view-all">VIEW ALL</button>
+        </div>
+        <div class="cards">
+            <div class="trending1">
+                <img src="images/trending-01.jpg" alt="a creed" class="trending-image">
+                <div class="text-btn">
+                    <div class="creed-text">
+                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                        <h3 class="trending-name" style="color:black; margin-top: -5px;">Assasin's Creed</h3>
+                    </div>                
+                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                </div>
+            </div>
+            <div class="trending2">
+                <img src="images/trending-02.jpg" alt="a creed" class="trending-image">
+                <div class="text-btn">
+                    <div class="creed-text">
+                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                        <h3 style="color:black; margin-top: -5px;">Apex Legend</h3>
+                    </div>                
+                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                </div>
+            </div>
+            <div class="trending3">
+                <img src="images/trending-03.jpg" alt="a creed" class="trending-image">
+                <div class="text-btn">
+                    <div class="creed-text">
+                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                        <h3 style="color:black; margin-top: -5px;">Lostark</h3>
+                    </div>                
+                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                </div>
+            </div>
+            <div class="trending4">
+                <img src="images/trending-04.jpg" alt="a creed" class="trending-image">
+                <div class="text-btn">
+                    <div class="creed-text">
+                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                        <h3 style="color:black; margin-top: -5px;">Destiny 2</h3>
+                    </div>                
+                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
     
 </body>
 <footer>
