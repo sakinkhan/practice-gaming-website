@@ -40,8 +40,9 @@
             align-items: center;
             padding: 20px;
         }
-        #search{
+        #search, #subscribe-email {
             background-color: whitesmoke;
+            color: #000;
             padding: 15px;
             margin-left: -20px;
             width: 300px;
@@ -51,7 +52,10 @@
             outline: none;
             font-size: 16px;
         }
-        #search-button, #view-all {
+        #view-all {
+            margin-right: 5%;
+        }
+        #search-button, #view-all, #subscribe-btn {
             background-color: #e8646c;
             color: white;
             border: none;
@@ -64,9 +68,16 @@
             font-size: 16px;
             font-weight: bold;
         }
-        #search-button:hover, #view-all:hover {
+        #search-button:hover, #view-all:hover, #subscribe-btn:hover {
             background-color: #527dfd;
             transition: background-color 0.3s ease;
+        }
+        .trending {
+            margin-top: 150px;
+            margin-bottom: 250px;
+            background-color: #f0f0f0;
+            padding: 0 0 50px 0;
+            border-radius: 150px;
         }
         .trending-header {
             display: flex;
@@ -90,13 +101,19 @@
         }
         .trending1, .trending2, .trending3, .trending4 {
             width: 300px;
-            background-color: #e2e2e2e1;
+            background-color: #cecdcd;
             border-radius: 20px;
         }
         .trending1:hover, .trending2:hover, .trending3:hover, .trending4:hover {
             transform: scale(1.05);
             transition: transform 0.3s ease;
         }
+        .trending-text {
+            text-align: left;
+            margin-left: 5%;
+            margin-bottom: 20px;
+        }
+
         .text-btn{
             display: flex;
             justify-content: space-between;
@@ -130,6 +147,20 @@
             background-color: #527dfd;
             transition: background-color 0.3s ease;
         }
+        #subscribe-email {
+            width: 10em;
+            height: 1em;
+            margin-left: 10px;
+            margin-right: -35px;
+            z-index: 1;
+        }
+        #subscribe-btn {
+            width: 12em;
+            height: 4em;
+            margin-left: -10px;
+            font-size: smaller;
+            z-index: 2;
+        }
     </style>
 </head>
 <header>
@@ -143,84 +174,111 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Product Details</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a class="login" href="signin.html">Sign In</a></li>
-                <li><a class="login" href="register.html">Sign Up</a></li>
+                <li><a class="signin" href="signin.html">Sign In</a></li>
+                <li><a class="signup" href="register.html">Sign Up</a></li>
             </ul>
     </div>
 </header>
 <body>
-    <div class="banner">
-        <div class="banner-text">
-            <h3>Welcome to Moodman</h3>
-            <h1>BEST <span id="hover-text">GAMING</span> SITE EVER!</h1>
-            <p style="font-size: 16px; margin-inline-end: 210px;">Your one-stop destination for the best gaming experience! Discover the latest games, exclusive offers, and unbeatable prices.</p>
-            <br> <br>
-            <div class="search-container">
-                <input type="text" name="search-input" id="search" placeholder="Type something...">
-                <button type="submit" id="search-button">SEARCH NOW</button>
+    <section>
+        <div class="banner">
+            <div class="banner-text">
+                <h3>Welcome to Moodman</h3>
+                <h1>BEST <span id="hover-text">GAMING</span> SITE EVER!</h1>
+                <p style="font-size: 16px; margin-inline-end: 210px;">Your one-stop destination for the best gaming experience! Discover the latest games, exclusive offers, and unbeatable prices.</p>
+                <br> <br>
+                <div class="search-container">
+                    <input type="text" name="search-input" id="search" placeholder="Type something...">
+                    <button type="submit" id="search-button">SEARCH NOW</button>
+                </div>
+                
             </div>
-            
+            <img src="images/ea fc 25 cover.jpg" alt="EA FC 25 cover photo" class="banner-image">
+            <span id="discount">-40%</span>
         </div>
-        <img src="images/ea fc 25 cover.jpg" alt="EA FC 25 cover photo" class="banner-image">
-        <span id="discount">-40%</span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="trending">
-        <div class="trending-header">
-            <div class="trending-text">
-                <h4 style="color: #e8646c;">TRENDING</h4>
-                <h1>Trending Games</h1>
-            </div>
-            <button type="submit" id="view-all">VIEW ALL</button>
-        </div>
-        <div class="cards">
-            <div class="trending1">
-                <img src="images/trending-01.jpg" alt="a creed" class="trending-image">
-                <div class="text-btn">
-                    <div class="creed-text">
-                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
-                        <h3 class="trending-name" style="color:black; margin-top: -5px;">Assasin's Creed</h3>
-                    </div>                
-                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+    </section>
+    <section>
+        <div class="trending">
+            <div class="trending-header">
+                <div class="trending-text">
+                    <h4 style="color: #e8646c; margin-bottom: -5px;">TRENDING</h4>
+                    <h1 style="color: black;">Trending Games</h1>
                 </div>
+                <button type="submit" id="view-all">VIEW ALL</button>
             </div>
-            <div class="trending2">
-                <img src="images/trending-02.jpg" alt="a creed" class="trending-image">
-                <div class="text-btn">
-                    <div class="creed-text">
-                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
-                        <h3 style="color:black; margin-top: -5px;">Apex Legend</h3>
-                    </div>                
-                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+            <div class="cards">
+                <div class="trending1">
+                    <img src="images/trending-01.jpg" alt="a creed" class="trending-image">
+                    <div class="text-btn">
+                        <div class="creed-text">
+                            <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                            <h3 class="trending-name" style="color:black; margin-top: -5px;">Assasin's Creed</h3>
+                        </div>                
+                        <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="trending3">
-                <img src="images/trending-03.jpg" alt="a creed" class="trending-image">
-                <div class="text-btn">
-                    <div class="creed-text">
-                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
-                        <h3 style="color:black; margin-top: -5px;">Lostark</h3>
-                    </div>                
-                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                <div class="trending2">
+                    <img src="images/trending-02.jpg" alt="a creed" class="trending-image">
+                    <div class="text-btn">
+                        <div class="creed-text">
+                            <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                            <h3 style="color:black; margin-top: -5px;">Apex Legend</h3>
+                        </div>                
+                        <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="trending4">
-                <img src="images/trending-04.jpg" alt="a creed" class="trending-image">
-                <div class="text-btn">
-                    <div class="creed-text">
-                        <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
-                        <h3 style="color:black; margin-top: -5px;">Destiny 2</h3>
-                    </div>                
-                    <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                <div class="trending3">
+                    <img src="images/trending-03.jpg" alt="a creed" class="trending-image">
+                    <div class="text-btn">
+                        <div class="creed-text">
+                            <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                            <h3 style="color:black; margin-top: -5px;">Lostark</h3>
+                        </div>                
+                        <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                    </div>
+                </div>
+                <div class="trending4">
+                    <img src="images/trending-04.jpg" alt="a creed" class="trending-image">
+                    <div class="text-btn">
+                        <div class="creed-text">
+                            <p style="color:rgba(0, 0, 0, 0.658);">Action</p>
+                            <h3 style="color:black; margin-top: -5px;">Destiny 2</h3>
+                        </div>                
+                        <button class="cart-button"><i class="material-icons">add_shopping_cart</i></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="newsletter-and-shop">
+        <div class="our-shop">
+            <div class="shop-text">
+                <h4  style="color: #e8646c; margin-bottom: -5px;">OUR SHOP</h4>
+                <h1 style="color: black;">Go Pre-Order Buy<br> & Get Best <span style="color: #527dfd;">Prices</span> <br> For You!</h1>
+                <h5 style="color: black;">
+                    Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.
+                </h5>
+            </div>
+            <form action="" method="post" id="subscribe-form">
+                <button type="submit" id="subscribe-btn">SHOP NOW</button>
+            </form>
+        </div>
+        <div class="photo">
+            <img src="./images/top-game-05.jpg" alt="Danob Photo" class="danob">
+        </div>
+        <div class="newsletter">
+            <div class="newsletter-text">
+                <h4 style="color: #e8646c; margin-bottom: -5px;">NEWSLETTER</h4>
+                <h1 style="color: black;">Get Up To $100 Off <br> Just Buy <span style="color: #527dfd;">Subscribe</span> <br> Newsletter!</h1>
+            </div>
+            <form action="" method="post" id="subscribe-form">
+                <input type="email" name="email" id="subscribe-email" placeholder="Your email..." required>
+                <button type="submit" id="subscribe-btn">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+        
+    </section>
+    
         
     
 </body>

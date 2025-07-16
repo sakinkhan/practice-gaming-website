@@ -23,8 +23,21 @@ nav a {
 nav a:hover {
     background-color: #527dfd9f;
 }
-.login:hover {
+.signin {
     background-color: #e8646c;
+}
+.signup {
+    background-color: #527dfd;
+}
+.signup:hover {
+    background-color: #e8646c;
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+.signin:hover {
+    background-color: #527dfd;
+    transform: scale(1.09);
+    transition: transform 0.5s ease;
 }
 .header-container {
     position: fixed;
@@ -182,3 +195,38 @@ footer {
   footer p a:hover {
     opacity: 0.75;
   }
+
+  /* Newsletter and Our Shop Section */
+.newsletter-and-shop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.danob {
+    z-index: 3;
+    width: 20em;
+    border-radius: 50px;
+    margin-left: 5em; 
+
+}
+.newsletter {
+    background-color: #cac8c8;
+    padding: 50px 50px 50px 50px;
+    width:25%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 10%;
+    z-index: 2;
+}
+.our-shop {
+    background-color: #cac8c8;
+    padding: 50px 50px 50px 50px;
+    width:25%;
+    border-radius: 50px;
+    z-index: 1;
+    margin-left: 20em;
+}
